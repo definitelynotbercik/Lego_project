@@ -1,0 +1,7 @@
+"0","lego_clean <- lego %>%"
+"0","  filter(!is.na(PL_retailPrice) & !is.na(year)) %>% # Usuń wiersze z brakami danych"
+"0","  mutate("
+"0","    PL_retailPrice = as.numeric(PL_retailPrice), # Konwersja na liczby"
+"0","    year = as.numeric(year) # Konwersja na liczby"
+"0","  ) %>%"
+"0","  filter(!is.na(PL_retailPrice) & !is.na(year)) # Usuń nieprawidłowe wartości"
